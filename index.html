@@ -7,15 +7,333 @@
     <title>jQuery-Bootstrap Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&display=swap"
       rel="stylesheet"
     />
-    ">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
+    <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Alan Xavier Elizondo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarId"
+        >
+          <span><i class="fas fa-bars hamburger"></i></span>
+        </button>
+        <!-- cant figure out how to put this navbar to the left -->
+        <!-- found the problem is was the stupid ml-auto to me-auto in ul -->
+        <!-- nevermind!!! is ms-auto to put it to the right -->
+        <div class="collapse navbar-collapse" id="navbarId">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- head -->
+    <header id="home">
+      <div class="container-fluid header-content">
+        <div class="row">
+          <div class="col text-center">
+            <div class="content-box">
+              <h4>Welcome</h4>
+              <h1>Im <span class="element"></span></h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                amet. Esse cumque doloribus exercitationem nostrum.
+              </p>
+              <a href="#" class="btn">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about pad" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="/images/real estate.jpg"
+              class="img-fluid img-thumbnail"
+              alt="talking picture"
+            />
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <h2>About Me</h2>
+            <h4>Hola! <span style="color: E96F85"></span>Im Am Alan</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              voluptates dolores ipsum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              voluptates dolores ipsum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              voluptates dolores ipsum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              voluptates dolores ipsum.
+            </p>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exp-class" id="exp-id">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <h3>My Skills</h3>
+          </div>
+          <div class="col-lg-6">
+            <label>Html</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 20%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                95%
+              </div>
+            </div>
+            <label>CSS</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                95%
+              </div>
+            </div>
+            <label>JavaScript/JQuery</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                95%
+              </div>
+            </div>
+            <label>React</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                95%
+              </div>
+            </div>
+            <label>Bootstrap</label>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                95%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services-class bg-sec pad id="services-id">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="col">
+              <h2>My Services</h2>
+              <p>We offer our clients</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fab fa-apple"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <div class="service-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                  maxime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">App Development</h5>
+                <div class="service-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                  maxime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fab fa-opencart"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ecommerce</h5>
+                <div class="service-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                  maxime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fab fa-react"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">React</h5>
+                <div class="service-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                  maxime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">BootStrap</h5>
+                <div class="service-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                  maxime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+                <div class="service-border"></div>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                  maxime.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire me -->
+    <section class="hire-me pad" id="hire-id">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h3 class="mb-4">I am avaiable for freelance</h3>
+            <a href="#" class="btn r-btn">Hire me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="library/jquery.min.js"></script>
     <script src="library/popper.min.js"></script>
-    <script src="library/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/library/jquery.waypoints.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   </body>
 </html>

@@ -30,4 +30,26 @@ $(document).ready(function () {
     },
     offset: "90%",
   });
+
+  // Owl Caoursel
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    items: 1,
+  });
+
+  var filtrized = $(".filtr-container").filterizr({
+    animationDuration: 0.5,
+  });
+});
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector("loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
 });

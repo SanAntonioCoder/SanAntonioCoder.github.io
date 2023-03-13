@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jQuery-Bootstrap Portfolio</title>
+    <title>Alan Xavier Elizondo Portfolio</title>
+    <link rel="icon" href="images/300111-200.png" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/library/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/library/owl.theme.default.min.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -25,6 +28,8 @@
   </head>
 
   <body>
+    <div id="preloader"></div>
+
     <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">Alan Xavier Elizondo</a>
@@ -207,7 +212,7 @@
     </section>
 
     <!-- services -->
-    <section class="services-class bg-sec pad id="services-id">
+    <section class="services-class bg-sec pad" id="services-id">
       <div class="container text-center">
         <div class="row">
           <div class="col">
@@ -318,11 +323,296 @@
         <div class="row">
           <div class="col">
             <h3 class="mb-4">I am avaiable for freelance</h3>
-            <a href="#" class="btn r-btn">Hire me</a>
+            <a href="#" class="btn stupid-btn">Hire me</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- testimony -->
+
+    <section class="testimony-class pad bg-sec" id="testimony-id">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h2>Testimony</h2>
+            <p>what ppl say</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="text-center test-item">
+                  <i class="fas fa-quote-left"></i>
+                  <div>
+                    <img
+                      src="/images/dirty room.jpg"
+                      alt="selfie"
+                      class="mx-auto test-img rounded-circle"
+                    />
+                  </div>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam natus amet eveniet hic magnam quo!
+                  </p>
+                  <p class="test-name">alan elizondo, AXCEL Homes.com</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-center test-item">
+                  <i class="fas fa-quote-left"></i>
+                  <div>
+                    <img
+                      src="/images/pro pic.jpeg"
+                      alt="selfie"
+                      class="mx-auto test-img rounded-circle"
+                    />
+                  </div>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam natus amet eveniet hic magnam quo!
+                  </p>
+                  <p class="test-name">some guy, CEO</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-center test-item">
+                  <i class="fas fa-quote-left"></i>
+                  <div>
+                    <img
+                      src="/images/talking.jpg"
+                      alt="selfie"
+                      class="mx-auto test-img rounded-circle"
+                    />
+                  </div>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam natus amet eveniet hic magnam quo!
+                  </p>
+                  <p class="test-name">
+                    Xavier elizondo, SanAntonioCoder@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text-center test-item">
+                  <i class="fas fa-quote-left"></i>
+                  <div>
+                    <img
+                      src="/images/talking.jpg"
+                      alt="selfie"
+                      class="mx-auto test-img rounded-circle"
+                    />
+                  </div>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam natus amet eveniet hic magnam quo!
+                  </p>
+                  <p class="test-name">alan elizondo, Web Development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Work  -->
+
+    <section class="work pad">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col mb-5">
+            <h2>work</h2>
+            <p>what i have created</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 mx-auto mb-5">
+            <button class="btn pink-btn" data-filter="all">All</button>
+            <button class="btn pink-btn" data-filter="1">Web</button>
+            <button class="btn pink-btn" data-filter="2">SEO</button>
+            <button class="btn pink-btn" data-filter="3">Graphics</button>
+            <button class="btn pink-btn" data-filter="3">Apps</button>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row filtr-container mx-auto">
+            <!-- stupidest finding fix = just changing the work filter-item to filtr-item -->
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="4,2"
+            >
+              <div>
+                <img class="img-fluid" src="images/real estate.jpg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1,4,2"
+            >
+              <div>
+                <img class="img-fluid" src="images/talking.jpg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="4,3,2"
+            >
+              <div>
+                <img class="img-fluid" src="images/selfie.jpg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1,4"
+            >
+              <div>
+                <img class="img-fluid" src="images/pro pic.jpeg" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="1,2"
+            >
+              <div>
+                <img class="img-fluid" src="images/real estate.jpg" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper"
+              data-category="2,3"
+            >
+              <div>
+                <img class="img-fluid" src="images/real estate.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact pad pg-sec">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h2>Contanct us</h2>
+            <p>Feel free to contact me</p>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="r-icon">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="text-center">
+                <h5>call us</h5>
+                <p>(830)513-2829</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="r-icon">
+              <i class="far fa-envelope"></i>
+              <div class="text-center">
+                <h5>Email us</h5>
+                <p>SanAntonioCoder@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="r-icon">
+              <i class="fas fa-map-pin"></i>
+              <div class="text-center">
+                <h5>Visit us</h5>
+                <p>410 Mahogany Chest San Antonio,Tx 78249</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col">
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      rows="10"
+                      placeholder="Message me"
+                      style="resize: none"
+                    ></textarea>
+                  </div>
+                  <!-- will not float right -->
+                  <button type="submit" class="btn pink-btn float-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div
+        class="container h-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="row">
+          <div class="col">
+            <div class="r-icon text-center mt-3">
+              <ul>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-muted" style="font-size: 14px">
+              &copy; copyright Alan Xavier Elizondo | 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="library/jquery.min.js"></script>
     <script src="library/popper.min.js"></script>
@@ -335,5 +625,7 @@
     <script src="/library/jquery.waypoints.min.js"></script>
 
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="/library/owl.carousel.min.js"></script>
+    <script src="/library/jquery.filterizr.min.js"></script>
   </body>
 </html>

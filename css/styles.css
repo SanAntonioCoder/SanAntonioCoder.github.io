@@ -30,10 +30,64 @@ p {
 .bg-sec {
   background: #f8f9f8;
 }
-.rbtn {
+/* wrong stupid r-btn */
+/* all i had to do was put the a.  */
+a.stupid-btn {
   padding: 5px 20px;
-  background-color: #ee8683;
+  background: #ee8683;
   color: white;
+}
+
+/* preloader */
+.loading {
+  position: fixed;
+  z-index: 999999;
+  background-color: black;
+
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  border: 1em solid #ff5733;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader::before {
+  animation-delay: 0.5s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 /* Navigation */
@@ -188,4 +242,64 @@ header {
   width: 40px;
   margin: 15px auto;
   background: #e65f78;
+}
+
+/* Testimony */
+
+.testimony-class .test-item {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.testimony-class .test-item .test-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.testimony-class .test-item i {
+  color: gray;
+}
+
+.test-item p.test-name {
+  font-size: 11px;
+}
+
+/* work */
+
+button.pink-btn {
+  padding: 5px 20px;
+  background: #ee8683;
+  color: white;
+}
+
+.work .card-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Contact us */
+
+.contact .r-icon {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  height: 200px;
+  background-color: #3333;
+}
+footer .r-icon a {
+  font-size: 20px;
+  color: #848484;
+  padding: 10px;
+  border: 1px solid #848484;
+  border-radius: 50%;
+}
+footer .r-icon a:hover {
+  border: 1px solid #eee;
+  color: #eee;
+  transition: 0.5 all;
 }

@@ -42,8 +42,7 @@ a.stupid-btn {
 .loading {
   position: fixed;
   z-index: 999999;
-  background-color: black;
-
+  background: #000;
   width: 100%;
   height: 100%;
 }
@@ -61,7 +60,7 @@ a.stupid-btn {
 .loader::before,
 .loader::after {
   content: "";
-  border: 1em solid #ff5733;
+  border: 1em solid #ee8683;
   border-radius: 50%;
   width: inherit;
   height: inherit;

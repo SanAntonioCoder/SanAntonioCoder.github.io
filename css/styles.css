@@ -19,7 +19,7 @@ p {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  color: #6c757d;
+  color: #fff;
 }
 
 .pad {
@@ -28,14 +28,14 @@ p {
 }
 
 .bg-sec {
-  background: #f8f9f8;
+  background: #0c2340;
 }
 /* wrong stupid r-btn */
 /* all i had to do was put the a.  */
 a.stupid-btn {
   padding: 5px 20px;
-  background: #ee8683;
-  color: white;
+  background: #f15a22;
+  color: #fff;
 }
 
 /* preloader */
@@ -60,7 +60,7 @@ a.stupid-btn {
 .loader::before,
 .loader::after {
   content: "";
-  border: 1em solid #ee8683;
+  border: 1em solid #f15a22;
   border-radius: 50%;
   width: inherit;
   height: inherit;
@@ -114,20 +114,20 @@ nav .navbar-nav li {
 }
 
 nav.r-nav.stickyadd {
-  background: #fff !important;
+  background: #0c2340 !important;
   padding: 15px 0;
   box-shadow: 0 1px 8px 3px rbga(0, 0, 0, 0.05);
   transition: 0.5s all ease-in-out;
 }
 
 nav.stickyadd .navbar-brand {
-  color: #000;
+  color: #f15a22;
   font-size: 40px;
   transition: 0.5s all;
 }
 
 nav.stickyadd .navbar-nav .nav-link {
-  color: #000 !important;
+  color: #f15a22 !important;
 }
 
 .navbar .hamburger {
@@ -135,11 +135,7 @@ nav.stickyadd .navbar-nav .nav-link {
 }
 
 nav.stickyadd .hamburger {
-  color: fff;
-}
-
-nav.stickyadd .hamburger {
-  color: black;
+  color: #f15a22;
 }
 
 /* header Section */
@@ -160,6 +156,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: #f15a22 10px solid;
 }
 
 .content-box {
@@ -174,16 +171,16 @@ header {
   font-size: 52px;
 }
 .content-box a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   border: 2px solid #fff;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 5px 25px;
 }
 
 .content-box a:hover {
   color: #000;
-  background: #fff;
+  background: #f15a22;
   transition: 0.5 all;
 }
 
@@ -194,31 +191,40 @@ header {
 /* About us */
 
 .about li a {
-  color: #000;
+  color: #0c2340;
   display: line-block;
   height: 42px;
   width: 42px;
-  font-size: 20px;
-  border: 2px solid #d4d4d4;
-  border-radius: 50%;
+  font-size: 30px;
+  border: 3px solid #0c2340;
+  border-radius: 70%;
   line-height: 40px;
   transition: 0.5s all;
   text-align: center;
 }
 
 .about li a:hover {
-  color: blue;
+  border: 5px solid #f15a22;
+  color: #f15a22;
+}
+.about p {
+  color: #000;
 }
 
 /* exp section */
+.exp-class {
+  margin-bottom: 80px;
+}
+
 .exp-class .progress {
   height: 10px;
   border-radius: 20px;
   font-size: 10px;
+  margin-bottom: 10px;
 }
 
 .progress-bar {
-  background-color: #ee8683;
+  background-color: #0c2340;
 }
 .exp-class label {
   font-size: 20px;
@@ -226,11 +232,26 @@ header {
 }
 
 /* service */
+
+.services-class h2 {
+  color: white;
+}
+.card {
+  margin: 10px;
+}
+.card-body {
+  width: 100%;
+  height: 100%;
+}
+
 .card .card-header {
-  background: #f8f9fa;
+  background: white;
 }
 .card-header {
   border: none;
+}
+.card-text {
+  color: #000;
 }
 
 .services-class .card-header i {
@@ -238,12 +259,19 @@ header {
 }
 .service-border {
   height: 2px;
-  width: 40px;
+  width: 30px;
   margin: 15px auto;
-  background: #e65f78;
+  background: #f15a22;
+}
+.jq-img {
+  width: 50px;
+  height: 50px;
 }
 
 /* Testimony */
+.testimony-class h2 {
+  color: white;
+}
 
 .testimony-class .test-item {
   max-width: 500px;
@@ -257,7 +285,7 @@ header {
 }
 
 .testimony-class .test-item i {
-  color: gray;
+  color: white;
 }
 
 .test-item p.test-name {
@@ -268,13 +296,19 @@ header {
 
 button.pink-btn {
   padding: 5px 20px;
-  background: #ee8683;
+  background: #f15a22;
   color: white;
 }
 
 .work .card-wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.img-fluid {
+  margin-top: 5%;
+  width: 300px;
+  border-radius: 25%;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
 }
 
 /* Contact us */
@@ -288,17 +322,18 @@ button.pink-btn {
 
 footer {
   height: 200px;
-  background-color: #3333;
+  background-color: #0c2340;
+  border-top: #f15a22 10px solid;
 }
 footer .r-icon a {
   font-size: 20px;
-  color: #848484;
+  color: #fff;
   padding: 10px;
-  border: 1px solid #848484;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
 footer .r-icon a:hover {
-  border: 1px solid #eee;
-  color: #eee;
+  border: 5px solid #f15a22;
+  color: #f15a22;
   transition: 0.5 all;
 }

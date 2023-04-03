@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alan Xavier Elizondo Portfolio</title>
-    <link rel="icon" href="images/300111-200.png" />
+    <link rel="icon" href="images/anarchy.png" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="/library/owl.carousel.min.css" />
     <link rel="stylesheet" href="/library/owl.theme.default.min.css" />
@@ -75,6 +75,10 @@
     <!-- head -->
     <header id="home">
       <div class="container-fluid header-content">
+        <video autoplay loop muted class="back-video">
+          <source src="images/dev.mp4" type="video/mp4" />
+        </video>  
+
         <div class="row">
           <div class="col text-center">
             <div class="content-box">
@@ -99,6 +103,7 @@
       </div>
     </header>
 
+    <!-- about me -->
     <section class="about pad" id="about">
       <div class="container">
         <div class="row">
@@ -345,11 +350,71 @@
         <div class="row">
           <div class="col">
             <h3 class="mb-4">Lets get started!</h3>
-            <a href="#contact" class="btn stupid-btn">Hire me</a>
+            <button class="btn orange-btn" data-bs-toggle="modal" data-bs-target="#hire">Hire me</a>
           </div>
         </div>
       </div>
     </section>
+
+    <div
+      class="modal fade"
+      id="hire"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="hire">Lets get started!</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-for-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+
+              <div class="mb-3">
+                <label for="last-name" class="col-for-label">
+                  Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="col-for-label"> Email: </label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="col-for-label"> Phone: </label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn blue-btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn orange-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- testimony -->
 
@@ -450,13 +515,13 @@
         </div>
         <div class="row">
           <div class="col-xs-12 mx-auto mb-5">
-            <button class="btn pink-btn" data-filter="all">All</button>
-            <button class="btn pink-btn" data-filter="1">React Apps</button>
-            <button class="btn pink-btn" data-filter="2">
+            <button class="btn orange-btn" data-filter="all">All</button>
+            <button class="btn orange-btn" data-filter="1">React Apps</button>
+            <button class="btn orange-btn" data-filter="2">
               Bootstrap/JQuery
             </button>
-            <button class="btn pink-btn" data-filter="3">JavaScript</button>
-            <button class="btn pink-btn" data-filter="3">Ecommerce</button>
+            <button class="btn orange-btn" data-filter="3">JavaScript</button>
+            <button class="btn orange-btn" data-filter="3">Ecommerce</button>
           </div>
         </div>
 
@@ -595,7 +660,7 @@
                     ></textarea>
                   </div>
                   <!-- will not float right -->
-                  <button type="submit" class="btn pink-btn float-right">
+                  <button type="submit" class="btn orange-btn float-right">
                     Submit
                   </button>
                 </div>

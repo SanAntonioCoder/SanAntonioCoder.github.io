@@ -130,6 +130,49 @@ nav.stickyadd .navbar-nav .nav-link {
   color: #f15a22 !important;
 }
 
+/* here works the brand but not the links if i copy it ???
+.navbar.stickyadd a:hover {
+  color: white;
+} */
+
+.navbar a:hover {
+  color: #f15a22;
+}
+
+/* this  is for the nav tags in home screen but not on the sticky */
+/* .navbar .navbar-nav li a:hover {
+  color: #0c2340;
+} */
+
+/* fix problem, remember its was nav-item */
+.nav-item a:after {
+  content: "";
+  background-color: #f15a22;
+  height: 3px;
+  width: 0;
+  margin: auto;
+  display: block;
+}
+.nav-item a:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
+/* this is for the brand underline */
+
+.r-nav a:after {
+  content: "";
+  background-color: #f15a22;
+  height: 3px;
+  width: 0;
+  margin: auto;
+  display: block;
+}
+.r-nav a:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
 .navbar .hamburger {
   color: #fff;
 }
@@ -143,11 +186,28 @@ nav.stickyadd .hamburger {
 header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/selfie.jpg");
+
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/selfie.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
 }
 
 .header-content {
@@ -268,6 +328,8 @@ header {
   height: 50px;
 }
 
+/* hire me */
+
 /* Testimony */
 .testimony-class h2 {
   color: white;
@@ -293,8 +355,13 @@ header {
 }
 
 /* work */
+button.blue-btn {
+  padding: 5px 20px;
+  background: #0c2340;
+  color: white;
+}
 
-button.pink-btn {
+button.orange-btn {
   padding: 5px 20px;
   background: #f15a22;
   color: white;
@@ -317,9 +384,8 @@ button.pink-btn {
   font-size: 50px;
   text-align: center;
 }
- .contact p{
-color: #000;
-}
+
+
 
 /* footer */
 

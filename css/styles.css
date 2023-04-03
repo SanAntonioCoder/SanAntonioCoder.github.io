@@ -195,6 +195,7 @@ header {
 }
 .back-video {
   position: absolute;
+  display: block;
   right: 0;
   bottom: 0;
   z-index: -1;

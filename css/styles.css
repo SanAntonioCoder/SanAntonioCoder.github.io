@@ -12,11 +12,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Monterrat", sans-serif;
+  font-family: "Monterrat",
+    sans-serif;
 }
 
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito",
+    sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #fff;
@@ -33,7 +35,8 @@ p {
 /* wrong stupid r-btn */
 /* all i had to do was put the a.  */
 a.stupid-btn {
-  padding: 5px 20px;
+  padding: 5px
+    20px;
   background: #f15a22;
   color: #fff;
 }
@@ -48,26 +51,39 @@ a.stupid-btn {
 }
 
 .loader {
-  border: 0 solid transparent;
+  border: 0
+    solid
+    transparent;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   position: absolute;
-  top: calc(50vh - 75px);
-  left: calc(50vw - 75px);
+  top: calc(
+    50vh -
+      75px
+  );
+  left: calc(
+    50vw -
+      75px
+  );
 }
 
 .loader::before,
 .loader::after {
   content: "";
-  border: 1em solid #f15a22;
+  border: 1em
+    solid
+    #f15a22;
   border-radius: 50%;
   width: inherit;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
-  animation: loader 2s linear infinite;
+  animation: loader
+    2s
+    linear
+    infinite;
   opacity: 0;
 }
 
@@ -77,14 +93,18 @@ a.stupid-btn {
 
 @keyframes loader {
   0% {
-    transform: scale(0);
+    transform: scale(
+      0
+    );
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    transform: scale(1);
+    transform: scale(
+      1
+    );
     opacity: 0;
   }
 }
@@ -93,40 +113,70 @@ a.stupid-btn {
 
 nav.r-nav {
   background: transparent;
-  padding: 20px 0;
-  transition: 0.5 all;
+  padding: 20px
+    0;
+  transition: 0.5
+    all;
 }
-nav .navbar-brand {
+nav
+  .navbar-brand {
   font-size: 30px;
   color: #fff;
 }
 
-nav .navbar-nav li a {
-  color: rgba(255, 255, 255, 0.8);
+nav
+  .navbar-nav
+  li
+  a {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  );
   font-size: 16px;
   letter-spacing: 0.05em;
   font-weight: 600;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito",
+    sans-serif;
 }
 
-nav .navbar-nav li {
+nav
+  .navbar-nav
+  li {
   margin-left: 15px;
 }
 
 nav.r-nav.stickyadd {
   background: #0c2340 !important;
-  padding: 15px 0;
-  box-shadow: 0 1px 8px 3px rbga(0, 0, 0, 0.05);
-  transition: 0.5s all ease-in-out;
+  padding: 15px
+    0;
+  box-shadow: 0
+    1px
+    8px
+    3px
+    rbga(
+      0,
+      0,
+      0,
+      0.05
+    );
+  transition: 0.5s
+    all
+    ease-in-out;
 }
 
-nav.stickyadd .navbar-brand {
+nav.stickyadd
+  .navbar-brand {
   color: #f15a22;
   font-size: 40px;
-  transition: 0.5s all;
+  transition: 0.5s
+    all;
 }
 
-nav.stickyadd .navbar-nav .nav-link {
+nav.stickyadd
+  .navbar-nav
+  .nav-link {
   color: #f15a22 !important;
 }
 
@@ -135,7 +185,8 @@ nav.stickyadd .navbar-nav .nav-link {
   color: white;
 } */
 
-.navbar a:hover {
+.navbar
+  a:hover {
   color: #f15a22;
 }
 
@@ -145,7 +196,8 @@ nav.stickyadd .navbar-nav .nav-link {
 } */
 
 /* fix problem, remember its was nav-item */
-.nav-item a:after {
+.nav-item
+  a:after {
   content: "";
   background-color: #f15a22;
   height: 3px;
@@ -153,14 +205,18 @@ nav.stickyadd .navbar-nav .nav-link {
   margin: auto;
   display: block;
 }
-.nav-item a:hover::after {
+.nav-item
+  a:hover::after {
   width: 100%;
-  transition: width 0.3s linear;
+  transition: width
+    0.3s
+    linear;
 }
 
 /* this is for the brand underline */
 
-.r-nav a:after {
+.r-nav
+  a:after {
   content: "";
   background-color: #f15a22;
   height: 3px;
@@ -168,16 +224,21 @@ nav.stickyadd .navbar-nav .nav-link {
   margin: auto;
   display: block;
 }
-.r-nav a:hover::after {
+.r-nav
+  a:hover::after {
   width: 100%;
-  transition: width 0.3s linear;
+  transition: width
+    0.3s
+    linear;
 }
 
-.navbar .hamburger {
+.navbar
+  .hamburger {
   color: #fff;
 }
 
-nav.stickyadd .hamburger {
+nav.stickyadd
+  .hamburger {
   color: #f15a22;
 }
 
@@ -199,7 +260,9 @@ header {
   right: 0;
   bottom: 0;
   z-index: -1;
-  border-bottom: #f15a22 10px solid;
+  border-bottom: #f15a22
+    10px
+    solid;
 }
 
 .video-overlay {
@@ -225,50 +288,69 @@ header {
   color: #fff;
 }
 
-.content-box h4 {
+.content-box
+  h4 {
   font-size: 30px;
 }
-.content-box h1 {
+.content-box
+  h1 {
   font-size: 52px;
 }
-.content-box a {
+.content-box
+  a {
   color: white;
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 2px
+    solid
+    #fff;
   border-radius: 25px;
-  padding: 5px 25px;
+  padding: 5px
+    25px;
 }
 
-.content-box a:hover {
+.content-box
+  a:hover {
   color: #000;
   background: #f15a22;
-  transition: 0.5 all;
+  transition: 0.5
+    all;
 }
 
-.content-box p {
+.content-box
+  p {
   color: white;
 }
 
 /* About us */
 
-.about li a {
+.about
+  li
+  a {
   color: #0c2340;
   display: line-block;
   height: 42px;
   width: 42px;
   font-size: 30px;
-  border: 3px solid #0c2340;
+  border: 3px
+    solid
+    #0c2340;
   border-radius: 70%;
   line-height: 40px;
-  transition: 0.5s all;
+  transition: 0.5s
+    all;
   text-align: center;
 }
 
-.about li a:hover {
-  border: 5px solid #f15a22;
+.about
+  li
+  a:hover {
+  border: 5px
+    solid
+    #f15a22;
   color: #f15a22;
 }
-.about p {
+.about
+  p {
   color: #000;
 }
 
@@ -277,7 +359,8 @@ header {
   margin-bottom: 80px;
 }
 
-.exp-class .progress {
+.exp-class
+  .progress {
   height: 10px;
   border-radius: 20px;
   font-size: 10px;
@@ -287,14 +370,16 @@ header {
 .progress-bar {
   background-color: #0c2340;
 }
-.exp-class label {
+.exp-class
+  label {
   font-size: 20px;
   margin: 10px;
 }
 
 /* service */
 
-.services-class h2 {
+.services-class
+  h2 {
   color: white;
 }
 .card {
@@ -305,7 +390,8 @@ header {
   height: 100%;
 }
 
-.card .card-header {
+.card
+  .card-header {
   background: white;
 }
 .card-header {
@@ -315,13 +401,16 @@ header {
   color: #000;
 }
 
-.services-class .card-header i {
+.services-class
+  .card-header
+  i {
   font-size: 50px;
 }
 .service-border {
   height: 2px;
   width: 30px;
-  margin: 15px auto;
+  margin: 15px
+    auto;
   background: #f15a22;
 }
 .jq-img {
@@ -332,43 +421,54 @@ header {
 /* hire me */
 
 /* Testimony */
-.testimony-class h2 {
+.testimony-class
+  h2 {
   color: white;
 }
 
-.testimony-class .test-item {
+.testimony-class
+  .test-item {
   max-width: 500px;
-  margin: 50px auto;
+  margin: 50px
+    auto;
 }
 
-.testimony-class .test-item .test-img {
+.testimony-class
+  .test-item
+  .test-img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
 
-.testimony-class .test-item i {
+.testimony-class
+  .test-item
+  i {
   color: white;
 }
 
-.test-item p.test-name {
+.test-item
+  p.test-name {
   font-size: 11px;
 }
 
 /* work */
 button.blue-btn {
-  padding: 5px 20px;
+  padding: 5px
+    20px;
   background: #0c2340;
   color: white;
 }
 
 button.orange-btn {
-  padding: 5px 20px;
+  padding: 5px
+    20px;
   background: #f15a22;
   color: white;
 }
 
-.work .card-wrapper {
+.work
+  .card-wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -376,17 +476,26 @@ button.orange-btn {
   margin-top: 5%;
   width: 300px;
   border-radius: 25%;
-  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  box-shadow: 5px
+    5px
+    20px
+    rgb(
+      197,
+      195,
+      195
+    );
 }
 
 /* Contact us */
 
-.contact .r-icon {
+.contact
+  .r-icon {
   font-size: 50px;
   text-align: center;
 }
 
-.contact p {
+.contact
+  p {
   color: #000;
 }
 /* footer */
@@ -394,17 +503,28 @@ button.orange-btn {
 footer {
   height: 200px;
   background-color: #0c2340;
-  border-top: #f15a22 10px solid;
+  border-top: #f15a22
+    10px
+    solid;
 }
-footer .r-icon a {
+footer
+  .r-icon
+  a {
   font-size: 20px;
   color: #fff;
   padding: 10px;
-  border: 2px solid #fff;
+  border: 2px
+    solid
+    #fff;
   border-radius: 50%;
 }
-footer .r-icon a:hover {
-  border: 5px solid #f15a22;
+footer
+  .r-icon
+  a:hover {
+  border: 5px
+    solid
+    #f15a22;
   color: #f15a22;
-  transition: 0.5 all;
+  transition: 0.5
+    all;
 }
